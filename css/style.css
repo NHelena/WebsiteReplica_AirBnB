@@ -3,6 +3,18 @@
 ############################################################################## */
 
 /* =============================================================================
+   OVERALL STYLES
+============================================================================== */
+
+
+body {
+  font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* =============================================================================
    HEADER
 ============================================================================== */
 
@@ -10,11 +22,14 @@
 .navbar-default {
   background-color: transparent !important;
   border: none;
-  font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Setting of the navbar color-font in white */
 .navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
   color: white;
 }
 
@@ -48,3 +63,52 @@ section {
 /* =============================================================================
    FOOTER
 ============================================================================== */
+
+footer {
+  background-image: url(../img/footer-pattern.png);
+  background-color: #2B2D2E;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin-top: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+select {
+  background-color: #484848;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li:first-child {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+ul li a {
+  color: white;
+  font-size: 14px;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: #BBBBBB;
+}
+
+h4 {
+  color: white;
+  font-size: 16px;
+}
